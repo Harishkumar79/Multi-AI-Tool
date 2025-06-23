@@ -1,0 +1,510 @@
+.App {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vh;
+  padding: 35px 70px;
+  background-color: #08003a !important;
+  color: #ffffff;
+
+  .logoName{
+    font-size: xx-large;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: large;
+  }
+
+}
+
+.header {
+  background-color: #08003a !important;
+  height: auto;
+  padding: 0px 40px 20px 40px;
+  font-size: 1.5rem;
+
+  h1 {
+    margin: 0px;
+    padding:0px 100px;
+  }
+
+  textarea {
+    margin-top: 30px;
+    padding: 5px 10px;
+    width: 65vw;
+    height: 18vh;
+    font-size: x-large;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.buttons {
+  display: flex;
+  width: 65vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+
+  button {
+    border: none;
+    font-size: x-large;
+    padding: 20px 50px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+}
+
+button:hover {
+  color: cyan;
+  background-color: #c02c3b;
+}
+
+.response {
+  color: rgb(0, 0, 0);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+
+  .btn-copytext{
+    float:right;
+    width: 50px;
+    height: auto;
+  }
+
+  pre {
+    width: 65vw;
+    white-space: pre-wrap;
+    height: auto;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.400);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+  }
+}
+
+
+/* helperPage-css  */
+
+.HelpPage{
+  background-color: #08003a !important ;
+  color: #ffffff;
+  text-align: center;
+}
+
+.help-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  height: auto;
+  width: 80vw;
+  margin: 0px auto;
+  padding-bottom: 50px;
+
+
+  img{
+    width: 30vw;
+    height: 35vh;
+    border-radius: 12px;
+  }
+
+  .help-tabs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.500);
+    margin: auto;
+    border-radius: 12px;
+
+    div{
+      width: 30vw;
+    }
+  }
+}
+
+
+
+
+/* ----------Media-css-------- */
+
+
+
+/* for tabs  */
+
+@media (max-width:1024px) {
+  nav {
+    height: 2vh;
+    padding: 22px 50px;
+
+    .logoName{
+      font-size: x-large;
+    }
+
+    a {
+      font-size: medium;
+    }
+  }
+
+  .header {
+    font-size: 1.2rem;
+    padding: 0px 50px 20px 50px;
+
+    h1{
+      font-size: 2rem;
+    }
+
+    textarea {
+      margin-top: 10px;
+      font-size: large;
+    }
+
+    .buttons{
+      margin: 10px auto;
+    }
+
+    button {
+      width: 25vw;
+      padding: 10px;
+      margin: 8px;
+    }
+  }
+
+  .response {
+    margin: 10px auto;
+    font-size: 1.2rem;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+
+
+    h2 {
+      margin: 0px;
+    }
+
+    pre {
+      width: 75vw;
+      padding: 10px;
+      font-size: large;
+    }
+  }
+
+  .help-page-container{
+
+    font-size: large;
+    
+    img{
+      width: 72vw;
+      height: 45vh;
+    }
+  
+    .help-tabs{
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+     
+  
+      div{
+        width: 75vw;
+      }
+    }
+  }
+
+}
+
+/* for large mobile  */
+
+@media screen and (max-width:786px) {
+  nav {
+    height: 2vh;
+    padding: 22px 40px;
+
+    .logoName{
+      font-size: large;
+    }
+
+    a {
+      font-size: medium;
+    }
+  }
+
+  .header {
+    font-size: 1rem;
+    padding: 10px 40px;
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 0px 10px;
+    }
+
+    textarea {
+      margin-top: 15px;
+      width: 65vw;
+      font-size: medium;
+      border-radius: 10px;
+    }
+
+    .buttons{
+      margin: 12px auto;
+    }
+
+    button {
+      width: 25vw;
+      margin: 5px;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  .response {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+
+    h2 {
+      margin: 0px;
+    }
+
+    pre {
+      width: 80vw;
+      padding: 10px;
+    }
+  }
+
+
+  .help-page-container{
+
+    font-size: medium;
+    
+    img{
+      width: 70vw;
+      height: 42vh;
+    }
+  
+    .help-tabs{
+      margin-top: -30px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+     
+  
+      div{
+        width: 75vw;
+      }
+    }
+  }
+
+}
+
+/* for medium size mobile  */
+
+@media (max-width:480px) {
+  nav {
+    height: 1vh;
+    padding: 20px 25px;
+
+    .logoName{
+      font-size: medium;
+    }
+
+    a {
+      font-size: small;
+    }
+  }
+
+  .header {
+    font-size: 0.6rem;
+    padding: 0px 30px 20px 30px;
+
+    h1 {
+      font-size: medium;
+    }
+
+    textarea {
+      margin-top: 10px;
+      width: 65vw;
+      height: 10vh;
+      font-size: small;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      margin: 10px auto;
+    }
+
+    button {
+      font-size: 0.6rem;
+      width: 25vw;
+      margin: 5px;
+      border-radius: 10px;
+    }
+  }
+
+  .response {
+    margin: 10px 20px;
+    font-size: 0.6rem;
+    gap: 0px;
+    justify-content: flex-start;
+
+    h2 {
+      margin: 0px;
+    }
+
+    pre {
+      width: 80vw;
+      padding: 10px;
+    }
+  }
+
+  .help-page-container{
+
+    font-size: small;
+    
+    img{
+      width: 75vw;
+      height: 35vh;
+    }
+  
+    .help-tabs{
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+     
+  
+      div{
+        width: 75vw;
+      }
+    }
+  }
+
+}
+
+/* for small mobile  */
+
+@media (max-width:320px) {
+  nav {
+    height: 1vh;
+    padding: 20px 30px;
+
+    .logoName{
+      font-size: medium;
+    }
+
+    a {
+      font-size: x-small;
+    }
+  }
+
+  .header {
+    font-size: 0.5rem;
+    padding: 0px 30px 10px 30px;
+
+    h1 {
+      font-size: medium;
+    }
+
+    textarea {
+      margin-top: 10px;
+      width: 65vw;
+      height: 10vh;
+      font-size: small;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      margin: 10px auto;
+    }
+
+    button {
+      font-size: 0.5rem;
+      width: 25vw;
+      margin: 5px;
+      border-radius: 10px;
+    }
+  }
+
+  .response {
+    margin: 10px 20px;
+    font-size: 0.5rem;
+    gap: 0px;
+    justify-content: flex-start;
+
+    h2 {
+      margin: 0px;
+    }
+
+    pre {
+      width: 80vw;
+      padding: 8px;
+    }
+  }
+
+  .help-page-container{
+
+    font-size: small;
+    
+    img{
+      width: 75vw;
+      height: 30vh;
+    }
+  
+    .help-tabs{
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+     
+  
+      div{
+        width: 75vw;
+      }
+    }
+  }
+
+}
