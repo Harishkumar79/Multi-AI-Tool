@@ -17,11 +17,11 @@ nav {
   padding: 35px 70px;
   background-color: #08003a !important;
   color: #ffffff;
+  text-decoration: none;
 
   .logoName{
     font-size: xx-large;
     color: #ffffff;
-    text-decoration: none;
   }
 
 
